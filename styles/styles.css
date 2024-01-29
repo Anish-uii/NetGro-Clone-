@@ -1,0 +1,215 @@
+/* Font Face for Roboto Regular */
+@font-face {
+  font-family: Roboto;
+  src: url("/font/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  border: none;
+  font-family: Roboto;
+  font-weight: lighter;
+  box-sizing: border-box;
+}
+
+/* Container Styles */
+.container {
+  
+  margin: 0 auto;
+  padding: 0 20px;
+  @media screen and (min-width: 576px) {
+    max-width: 520px; 
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media screen and (min-width: 992px) {
+    max-width: 920px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
+    
+  }
+}
+
+/* Button Styles */
+button {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #555;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .navbar,
+header nav {
+  display: flex;
+}
+
+header nav select,
+header nav a {
+  /* Common styles for navigation elements */
+  border: none;
+  color: #888;
+  font-size: 1rem;
+  font-weight: 700px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+header nav select:hover,
+header nav select option:hover,
+header nav a:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+header .search {
+  display: flex;
+  align-items: center;
+}
+
+header nav hr {
+  width: 5px;
+  background-color: #000;
+  height: 10px;
+}
+header .search input {
+  width: 65px;
+  border-left: 2px solid #888;
+  padding: 5px 10px;
+}
+
+header .search input:focus {
+  outline: none;
+  /* border-bottom: 1px solid #bbb; */
+}
+
+.hamburger {
+  display: none;
+  color: #000;
+}
+
+/* Main Content Styles */
+main {
+  position: relative;
+  background: rgba(72, 74, 97, 0.3) url("/images/banner.jpg") center/cover;
+  background-blend-mode: darken;
+}
+
+.slash-img {
+  position: absolute;
+  width: 40%;
+  min-width: 350px;
+}
+
+.red-overlay {
+  position: absolute;
+  background-color: #b74746;
+  width: 35%;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 3rem;
+  width: 50%;
+  margin: 40px 0px;
+  padding: 10px 0px;
+}
+.content>div{
+  padding: 30px 0;
+}
+.sliders {
+  padding: 30px 0;
+  width: 150px;
+  height: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sliders div {
+  width: 40px;
+  height: 4px;
+  border: 1px solid #ccc;
+}
+
+.sliders div:hover {
+  background-color: #fff;
+}
+
+/* Cards Section Styles */
+.cards {
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(47, 48, 56, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 25px;
+  width: calc(100% - 50px);
+}
+
+.cards .stat {
+  padding-left: 10px;
+}
+
+.cards img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.card {
+  font-size: 0.9rem;
+  padding: 5px 20px;
+  border-right: 1px solid #ccc;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: all ease-in 0.3s;
+  border-right: 2px solid #fff;
+}
+
+.card p {
+  font-weight: 100;
+  line-height: 2rem;
+}
+
+.card:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.card:nth-child(5) {
+  border: none;
+}
+
+.cards .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
